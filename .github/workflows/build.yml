@@ -28,10 +28,8 @@ jobs:
         boards: [rock-pi-e]
         build_systems: [rbuild]
         # distros: [debian, ubuntu]
-        # suites: [bookworm, jammy]
-        suites: [jammy]
-        # flavors: [kde, cli]
-        flavors: [cli]
+        suites: [bookworm, jammy]
+        flavors: [kde, cli]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
