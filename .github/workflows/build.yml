@@ -34,7 +34,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Upload rbuild image
-        uses: radxa-repo/rbuild@main
+        uses: radxa-repo/rbuild@dependabot/github_actions/actions/checkout-5
         if: matrix.build_systems == 'rbuild'
         with:
           board: ${{ matrix.boards }}
