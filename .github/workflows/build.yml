@@ -27,9 +27,9 @@ jobs:
       matrix:
         boards: [rock-pi-e]
         build_systems: [rbuild]
-        # distros: [debian, ubuntu]
-        suites: [bookworm, jammy]
-        flavors: [kde, cli]
+        # distros: [ubuntu]
+        suites: [jammy]
+        flavors: [cli]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
